@@ -12,7 +12,7 @@
 						<dt>Title:</dt>
 						<dd>{theme.title}</dd>
 						<dt>Key:</dt>
-						<dd>{theme.extensionname}</dd>
+						<dd>{theme.extensionName}</dd>
 						<dt>Version:</dt>
 						<dd>{theme.version}</dd>
 					</dl>
@@ -22,17 +22,17 @@
 		</div>
 		<div class="theme-meta">
 			<h2 class="theme-title">
-				<f:link.action action="showThemeDetails" arguments="{theme:theme.extensionname}">
+				<f:link.action action="showThemeDetails" arguments="{theme:theme.extensionName}">
 					{theme.title}
 				</f:link.action>
 			</h2>
 			<div class="theme-install">
-				<f:link.action action="showThemeDetails" arguments="{theme:theme.extensionname}" class="t3-button t3-button-action-installtheme btn btn-default btn-sm">
+				<f:link.action action="showThemeDetails" arguments="{theme:theme.extensionName}" class="t3-button t3-button-action-installtheme btn btn-default btn-sm">
 					<core:icon identifier="actions-document-info"/>
 					Details
 				</f:link.action>
 
-				<themes:ThemeEnabledCondition theme="{theme.extensionname}">
+				<themes:ThemeEnabledCondition theme="{theme.extensionName}">
 					<f:then>
 						<a href="#" onclick="return false" class=" btn btn-success btn-sm" style="cursor:not-allowed">
 							<core:icon identifier="status-status-checked" />
@@ -40,7 +40,7 @@
 						</a>
 					</f:then>
 					<f:else>
-						<f:link.action action="setTheme" arguments="{theme:theme.extensionname}" class="t3-button t3-button-action-installtheme btn btn-default btn-sm">
+						<f:link.action action="setTheme" arguments="{theme:theme.extensionName}" class="t3-button t3-button-action-installtheme btn btn-default btn-sm">
 							<core:icon identifier="status-status-checked" />
 							Activate Theme
 						</f:link.action>
