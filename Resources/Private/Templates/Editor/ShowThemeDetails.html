@@ -32,7 +32,7 @@
 						</p><br />
 					</f:if>
 					<p>
-						<themes:ThemeEnabledCondition theme="{theme.extensionname}">
+						<themes:ThemeEnabledCondition theme="{theme.extensionName}">
 							<f:then>
 								<a href="#" onclick="return false" class=" btn btn-success btn-sm pull-right" style="cursor:not-allowed">
 									<core:icon identifier="status-status-checked" />
@@ -40,7 +40,7 @@
 								</a>
 							</f:then>
 							<f:else>
-								<f:link.action action="setTheme" arguments="{theme:theme.extensionname}" class="t3-button t3-button-action-installtheme btn btn-success btn-sm pull-right">
+								<f:link.action action="setTheme" arguments="{theme:theme.extensionName}" class="t3-button t3-button-action-installtheme btn btn-success btn-sm pull-right">
 									<core:icon identifier="status-status-checked" />
 									Activate Theme
 								</f:link.action>
